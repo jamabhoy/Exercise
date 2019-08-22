@@ -14,5 +14,7 @@ public class FactorialTest {
         Assert.assertEquals(fac.factorial(3), (Integer)6);
         Assert.assertEquals(fac.factorial(4), (Integer)24);
         Assert.assertEquals(fac.factorial(5), (Integer)120);
+        Assert.assertEquals(fac.factorial(6), (Integer)720);
+        Assert.assertEquals(fac.factorial(7), (Integer)5040);
     }
 }
