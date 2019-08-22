@@ -1,5 +1,6 @@
 package com.mckenzie;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class FactorialTest {
@@ -8,8 +9,10 @@ public class FactorialTest {
 
     @Test
     public void test1() {
-        for (int i=1; i<=5; ++i) {
-            System.out.println(fac.factorial(i));
-        }
+        Assert.assertEquals(fac.factorial(1), (Integer)1);
+        Assert.assertEquals(fac.factorial(2), (Integer)2);
+        Assert.assertEquals(fac.factorial(3), (Integer)6);
+        Assert.assertEquals(fac.factorial(4), (Integer)24);
+        Assert.assertEquals(fac.factorial(5), (Integer)120);
     }
 }
